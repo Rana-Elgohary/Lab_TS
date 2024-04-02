@@ -63,6 +63,7 @@ class Employee implements IEmployee{
     id: number;
     name: string;
     username: string;
+    private _username: string;
     email: string;
     address: {
         street: string;
@@ -89,7 +90,7 @@ class Employee implements IEmployee{
     ) {
         this.id = id;
         this.name = name;
-        this.username = username;
+        this._username = username;
         this.email = email;
         this.address = {
             street: street,

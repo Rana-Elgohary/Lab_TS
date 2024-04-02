@@ -33,7 +33,7 @@ class Employee {
     constructor(id, name, username, email, street, suite, city, zipcode, lat, lng) {
         this.id = id;
         this.name = name;
-        this.username = username;
+        this._username = username;
         this.email = email;
         this.address = {
             street: street,
