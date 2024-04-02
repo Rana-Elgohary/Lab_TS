@@ -160,15 +160,7 @@ interface IAccount{
     removeCustomer()
 }
 
-class Account implements IAccount{
-    Date_of_opening: Date;
-    addCustomer(){
-        console.log("Added");
-    }
-    removeCustomer(){
-        console.log("Removed");
-    }
-
+class Account{
     Acc_no: number;
     Balance: number;
     debitAmount(){
@@ -183,9 +175,25 @@ class Account implements IAccount{
 }
 
 class Saving_Account extends Account implements IAccount{
+    Date_of_opening: Date;
+    addCustomer(){
+        console.log("Added");
+    }
+    removeCustomer(){
+        console.log("Removed");
+    }
+
     Min_Balance: number;
 }
 
 class Current_Account extends Account implements IAccount{
+    Date_of_opening: Date;
+    addCustomer(){
+        console.log("Added");
+    }
+    removeCustomer(){
+        console.log("Removed");
+    }
+
     Interest_Rate: number;
 }

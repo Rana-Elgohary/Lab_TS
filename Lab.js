@@ -62,12 +62,6 @@ class Manager extends Employee {
 let manager = new Manager(1, "Leanne Graham", 'Bret', "Sincere@april.biz", "Kulas Light", "Apt. 556", "Gwenborough", "92998-3874", "-37.3159", "81.1496");
 manager.GetAddress();
 class Account {
-    addCustomer() {
-        console.log("Added");
-    }
-    removeCustomer() {
-        console.log("Removed");
-    }
     debitAmount() {
         console.log("debitAmount");
     }
@@ -79,6 +73,18 @@ class Account {
     }
 }
 class Saving_Account extends Account {
+    addCustomer() {
+        console.log("Added");
+    }
+    removeCustomer() {
+        console.log("Removed");
+    }
 }
 class Current_Account extends Account {
+    addCustomer() {
+        console.log("Added");
+    }
+    removeCustomer() {
+        console.log("Removed");
+    }
 }
